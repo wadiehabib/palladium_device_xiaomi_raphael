@@ -23,4 +23,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Dex2oat
 PRODUCT_PRODUCT_PROPERTIES += \
-     dalvik.vm.dex2oat64.enabled=true
+    dalvik.vm.dex2oat64.enabled=true
+
+# Seamless transfer
+PRODUCT_PRODUCT_PROPERTIES += \
+    sys.fflag.override.settings_seamless_transfer=true
