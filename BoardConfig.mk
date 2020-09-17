@@ -136,6 +136,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+DISABLE_RILD_OEM_HOOK := true
 
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
