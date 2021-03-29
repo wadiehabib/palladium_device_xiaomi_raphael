@@ -30,3 +30,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 	ro.palladiumdevice.displaytype=AMOLED \
 	ro.palladiumdevice.battery=4000mAh \
 	ro.palladiumdevice.camera=48MP+13MP+8MP
+
+#FOD
+EXTRA_FOD_ANIMATIONS := true
