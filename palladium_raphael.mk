@@ -21,3 +21,12 @@ BUILD_FINGERPRINT := "Xiaomi/raphaelin/raphaelin:9/PKQ1.181121.001/V10.3.3.0.PFK
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_BOOT_ANIMATION_RES := 1080
 PALLADIUM_BUILDTYPE := OFFICIAL
+
+#PALLADIUM-PROPS
+PRODUCT_PRODUCT_PROPERTIES += \
+	ro.palladiumdevice.maintainer=Sanjheevi \
+	ro.palladiumdevice.cpu=SD855 \
+	ro.palladiumdevice.display=6.39 \
+	ro.palladiumdevice.displaytype=AMOLED \
+	ro.palladiumdevice.battery=4000mAh \
+	ro.palladiumdevice.camera=48MP+13MP+8MP
