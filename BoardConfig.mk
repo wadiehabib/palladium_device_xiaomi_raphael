@@ -145,6 +145,8 @@ DISABLE_RILD_OEM_HOOK := true
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
