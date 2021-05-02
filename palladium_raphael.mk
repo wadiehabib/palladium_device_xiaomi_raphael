@@ -24,7 +24,7 @@ PALLADIUM_BUILDTYPE := OFFICIAL
 
 #PALLADIUM-PROPS
 PRODUCT_PRODUCT_PROPERTIES += \
-	ro.palladiumdevice.maintainer=Sanjheevi \
+	ro.palladiumdevice.maintainer=WadieHabib \
 	ro.palladiumdevice.cpu=SD855 \
 	ro.palladiumdevice.display=6.39 \
 	ro.palladiumdevice.displaytype=AMOLED \
