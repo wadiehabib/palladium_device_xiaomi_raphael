@@ -477,5 +477,8 @@
 
     <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
     <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
+
+    <!-- Whether device has a notch -->
+    <bool name="config_haveNotch">false</bool>
 </resources>
 
