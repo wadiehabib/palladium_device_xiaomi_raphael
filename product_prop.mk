@@ -32,3 +32,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Seamless transfer
 PRODUCT_PRODUCT_PROPERTIES += \
     sys.fflag.override.settings_seamless_transfer=true
+
+# Blur
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.supports_background_blur=1 \
+    persist.sys.sf.disable_blurs=0 \
+    ro.sf.blurs_are_expensive=1
