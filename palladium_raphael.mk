@@ -20,7 +20,7 @@ PRODUCT_NAME := palladium_raphael
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_BOOT_ANIMATION_RES := 1080
-PALLADIUM_BUILDTYPE := OFFICIAL
+PALLADIUM_BUILD_TYPE := OFFICIAL
 TARGET_USES_BLUR := true
 
 #PALLADIUM-PROPS
@@ -32,8 +32,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 	ro.palladiumdevice.battery=4000mAh \
 	ro.palladiumdevice.camera=48MP+13MP+8MP
 
-#FOD
+# FOD
 EXTRA_FOD_ANIMATIONS := true
+TARGET_HAS_FOD := true
 
 ifeq ($(with_gapps), yes)
 PALLADIUM_BUILD_VARIANT := GAPPS
