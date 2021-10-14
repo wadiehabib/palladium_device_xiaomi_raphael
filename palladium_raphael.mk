@@ -16,9 +16,9 @@ PRODUCT_MODEL := Mi 9T Pro
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := palladium_raphael
 
-BUILD_FINGERPRINT := "google/coral/coral:11/RQ3A.210905.001/7511028:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        PRIVATE_BUILD_DESC="coral-user 11 RQ3A.210905.001 7511028 release-keys"
+        PRIVATE_BUILD_DESC="coral-user 11 RP1A.201005.004 6782484 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_BOOT_ANIMATION_RES := 1080
