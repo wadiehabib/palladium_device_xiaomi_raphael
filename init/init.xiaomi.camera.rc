@@ -1,0 +1,44 @@
+#! /bin/sh
+#
+#Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
+#All Rights Reserved.
+#Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+on early-init
+    # add xiaomi mem cgroups, used by camera
+    mkdir /dev/memcg/camera/ 0755 system system
+    write /dev/memcg/camera/memory.swappiness 100
+    write /dev/memcg/camera/memory.use_hierarchy 1
+
+    mkdir /dev/memcg/camera/app  0755 system system
+    write /dev/memcg/camera/app/memory.cache 0
+    mkdir /dev/memcg/camera/provider  0755 system system
+    write /dev/memcg/camera/provider/memory.cache 1
+    mkdir /dev/memcg/camera/service  0755 system system
+    write /dev/memcg/camera/service/memory.cache 2
+
+    mkdir /dev/memcg/camera/media 0755 system system
+    mkdir /dev/memcg/camera/media/service 0755 system system
+    write /dev/memcg/camera/media/service/memory.cache 3
+    mkdir /dev/memcg/camera/media/codec 0755 system system
+    mkdir /dev/memcg/camera/media/codec/codec 0755 system system
+    write /dev/memcg/camera/media/codec/codec/memory.cache 4
+    mkdir /dev/memcg/camera/media/codec/hw 0755 system system
+    write /dev/memcg/camera/media/codec/hw/memory.cache 5
+    mkdir /dev/memcg/camera/media/codec/sw 0755 system system
+    write /dev/memcg/camera/media/codec/sw/memory.cache 6
+
+service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
+    override
+    interface android.hardware.camera.provider@2.4::ICameraProvider legacy/0
+    interface vendor.qti.hardware.camera.postproc@1.0::IPostProcService camerapostprocservice
+    interface vendor.xiaomi.hardware.campostproc@1.0::IMiPostProcService default
+    interface vendor.xiaomi.hardware.cameraperf@1.0::IMiCameraPerfService default
+    class hal
+    user cameraserver
+    group audio camera input drmrpc oem_2907
+    ioprio rt 4
+    capabilities SYS_NICE
+    writepid /dev/cpuset/camera-daemon/tasks /dev/stune/foreground/tasks
+    writepid /dev/memcg/camera/provider/cgroup.procs
