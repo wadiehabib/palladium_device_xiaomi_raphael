@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_raphael.mk
+    $(LOCAL_DIR)/palladium_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_raphael-user \
-    nad_raphael-userdebug \
-    nad_raphael-eng
+    palladium_raphael-user \
+    palladium_raphael-userdebug \
+    palladium_raphael-eng
