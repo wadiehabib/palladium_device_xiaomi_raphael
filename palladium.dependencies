@@ -3,7 +3,7 @@
       "remote":"github",
       "repository":"wadiehabib/vendor_xiaomi_raphael",
       "target_path":"vendor/xiaomi",
-      "branch":"12.1"
+      "branch":"oem-12.1"
    },
    {
       "remote":"github",
