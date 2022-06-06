@@ -128,7 +128,7 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     LLVM=1
 
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := vendor/milahaina_defconfig
+TARGET_KERNEL_CONFIG := vendor/vili-qgki_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350
 
 # Partitions
