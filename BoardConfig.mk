@@ -112,7 +112,8 @@ BOARD_KERNEL_CMDLINE := \
     service_locator.enable=1 \
     swiotlb=0 \
     loop.max_part=7 \
-    firmware_class.path=/vendor/firmware
+    firmware_class.path=/vendor/firmware \
+    androidboot.selinux=permissive
 
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
 
