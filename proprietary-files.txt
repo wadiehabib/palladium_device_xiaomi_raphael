@@ -141,7 +141,6 @@ vendor/lib/libsndmonitor.so
 vendor/lib/libspkrprot.so
 vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
-vendor/lib/libresampler.so
 vendor/lib/libvideoNS.so
 vendor/lib64/liba2dpoffload.so
 vendor/lib64/libacdbloader.so
@@ -157,7 +156,6 @@ vendor/lib64/libhdmiedid.so
 vendor/lib64/libhdmipassthru.so
 vendor/lib64/libhfp.so
 vendor/lib64/libqtigef.so
-vendor/lib64/libresampler.so
 vendor/lib64/libsndmonitor.so
 vendor/lib64/libspkrprot.so
 vendor/lib64/libssrec.so
@@ -234,7 +232,6 @@ vendor/lib/soundfx/libqcomvisualizer.so
 vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libshoebox.so
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
@@ -1167,7 +1164,6 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/bin/init.kernel.post_boot-lahaina.sh
 vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qti.kernel.sh
-vendor/bin/init.xiaomi.early_boot.sh
 vendor/bin/vendor_modprobe.sh
 vendor/etc/init/hw/init.qti.kernel.rc
 
