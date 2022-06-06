@@ -280,6 +280,14 @@ vendor/lib64/libacdbrtac.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 
+# Batterysecret
+vendor/bin/batterysecret 
+vendor/bin/charge_logger
+vendor/bin/mishow.sh
+vendor/etc/init/hw/init.batterysecret.rc 
+vendor/etc/init/init.charge_logger.rc
+vendor/etc/init/init.mishow.ctl.rc
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -1800,9 +1808,36 @@ vendor/bin/tftp_server
 vendor/etc/init/vendor.qti.tftp.rc
 
 # Thermal
+vendor/bin/mi_thermald
+vendor/etc/init/hw/init.mi_thermald.rc
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
 vendor/etc/thermal-engine.conf
+vendor/etc/thermal-camera.conf
+vendor/etc/thermal-class0.conf
+vendor/etc/thermald-devices.conf
+vendor/etc/thermal-engine.conf
+vendor/etc/thermal-huanji.conf
+vendor/etc/thermal-india-camera.conf
+vendor/etc/thermal-india-class0.conf
+vendor/etc/thermal-india-huanji.conf
+vendor/etc/thermal-india-mgame.conf
+vendor/etc/thermal-india-navigation.conf
+vendor/etc/thermal-india-nolimits.conf
+vendor/etc/thermal-india-normal.conf
+vendor/etc/thermal-india-phone.conf
+vendor/etc/thermal-india-tgame.conf
+vendor/etc/thermal-india-video.conf
+vendor/etc/thermal-map.conf
+vendor/etc/thermal-map-india.conf
+vendor/etc/thermal-mgame.conf
+vendor/etc/thermal-navigation.conf
+vendor/etc/thermal-nolimits.conf
+vendor/etc/thermal-normal.conf
+vendor/etc/thermal-phone.conf
+vendor/etc/thermal-region-map.conf
+vendor/etc/thermal-tgame.conf
+vendor/etc/thermal-video.conf
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 
