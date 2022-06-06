@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_milahaina.mk
+    $(LOCAL_DIR)/palladium_milahaina.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_milahaina-eng \
-    lineage_milahaina-user \
-    lineage_milahaina-userdebug
+    palladium_milahaina-eng \
+    palladium_milahaina-user \
+    palladium_milahaina-userdebug
